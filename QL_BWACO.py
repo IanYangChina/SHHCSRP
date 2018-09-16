@@ -231,9 +231,11 @@ def q_learning(q_nurses_list, target_set, skill_set,
         fulfilled_demands = sum([x-y for x,y in zip(current_demand_num, remaining_demands)])
         # Calculate reward
         reward = fulfilled_demands + waiting_para * q_nurses_list[n].twt
+        next_state = state_identification(target_set, skill_set)
+        next_max_q = np.max(q_matrix[next_state])
         # Calculate q value
         q_value = (1 - learning_rate_para) * q_matrix[current_state][chosen_skill - 1] \
-                 + learning_rate_para * (reward + discount_para * q_matrix[current_state][chosen_skill - 1])
+                  + learning_rate_para * (reward + discount_para * next_max_q)
         # Update Q-matrix
         q_matrix[current_state][chosen_skill - 1] = float('%.2f' % (copy.deepcopy(q_value)))
 
