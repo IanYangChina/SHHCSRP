@@ -39,3 +39,8 @@ However, this project was one part of my last research subject that is now finis
 
 In spite of things mentioned above, there are plenty of directions that this project could move towards. Besides, I hope you can learn something useful from this repo :)
 For detailed information please check out the Wiki pages: [Wiki](https://github.com/IanYangChina/Q-learning---Ant-colony-optimization/wiki)
+
+## Direct try-out
+1. Clone the repo
+2. Run 'main.py' by any method
+3. Find new files in the root folder: things like solution*** with extensions like .png and .xls. They are results.
