@@ -2,7 +2,7 @@
 
 The project is my first attempt to build a reinforcement learning agent for solving complicated and large scale combinatorial optimisation problem. The target problem chosen for this project is a variant of the well-known Stochastic Vehicle Routing Problem with some complicated constraints. Basically, the task of such kind of problem is to assign a group of demands required by many customers to a group of vehicles with optimised cost, and this project aims to train an agent to make its own decisions generating a vehicle schedule plan.
 
-A statement here to make is that this repo is more like a tutorial of Q-learning, Ant Colony Optimisation, SVRP and Python but an appealing or applicable realisation for real-world application or academic research. It might disappoint those who are expecting something from this aspects. But for those who are seeking references or learning/practicing examples, this might be a good one. :)
+A statement here to make is that this repo is more like a tutorial of Q-learning, Ant Colony Optimisation, SVRP and Python than an appealing or applicable realisation for real-world application or academic research. It might disappoint those who are expecting something from this aspects. But for those who are seeking references or learning/practicing examples, this might be a good one. :)
 
 P.S. This is also a summary of my last study stage.
 
