@@ -23,7 +23,7 @@ Since RL algorithm requires a MDPs, the SVRP in this project was hierarchically 
    - take an action, that is, choose a vehicle.
    - observe the reward according to the solution given by the algorithm that solves the CCP model.
 
-Two objectives of the model are defined as: 1) to maximize the fulfilled demands, and 2) to minimize the total waiting time. The QL agent was expected to learn to make a plan that satisfies the objectives as much as possible. 
+Two objective of the model is to maximize the fulfilled demands. The QL agent was expected to learn to make a plan that satisfies the objective as much as possible. 
 
 But till now the algorithm does yet perform very well on the instance, which is probably due to the following problems:
 
@@ -33,9 +33,8 @@ But till now the algorithm does yet perform very well on the instance, which is 
 
 However, this project was one part of my last research subject that is now finished, and my first motivation was the curiosity of how well the Reinforcement Learning techniques could preform on large scale combinatorial optimisation problem. The reason I put it on Github is to make it as a reference that might be useful for someone who wants to make further investigation on this direction or take it as a practice of implementing Q-learning on combinatorial optimisation problem. Here are some suggestions that might help this project to make further progress:
 
-1. Two well-known approaches for solving the Multi-objective combinatorial optimisation problem: **weighted sum scalarisation and compromise solution method**. By applying these methods, one might be able to better shape the reward function of the QL agent. 
-2. One can rank the objectives and solve the problem by satisfying them one after one. By doing so one can lower the complexity of the original problem albeit it actully treats the objectives unequally with **prioritisation**. But it could still be referred by real-world engineering or other fields where decision makers treat the objectives differentially.
-3. Since the state difiniton here is highly abstracted from the information of resource and demand, which turned out insufficient for the QL agent to learn more important knowledge from the environment, one should consider figuring out a better approximation or abstraction of the environment.
+1. Better shape the reward function. 
+2. Since the state difiniton here is highly abstracted from the information of resource and demand, which turned out to be insufficient for the QL agent to learn more important knowledge from the environment, one may consider figuring out a better approximation or abstraction of the environment.
 
 In spite of what's mentioned above, there are plenty of directions that this project could move towards. Besides, I hope you can learn something useful from this repo :)
 For detailed information please check out the Wiki pages: [Wiki](https://github.com/IanYangChina/Q-learning---Ant-colony-optimization/wiki)
