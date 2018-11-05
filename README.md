@@ -2,7 +2,7 @@
 
 The project is my first attempt to build a reinforcement learning agent for solving a complicated and large scale combinatorial optimisation problem. The target problem chosen for this project is a variant of the well-known Stochastic Vehicle Routing Problem, namely, the Stochastic Home Health Care Scheduling and Routing Problem. Basically, the task of such kind of problems is to assign a group of demands required by many customers to a group of vehicles with optimised cost, and this project aims to train an agent to make its own decisions generating a plan. 
 
-A statement here to make is that this repo is more like a tutorial of Q-learning, Ant Colony Optimisation, SHHCSRP and Python than an appealing realisation for real-world application or academic research. It might disappoint those who are expecting too much from this aspects. But for those who are seeking references or learning/practicing examples, this might be a good one. :)
+A statement here to make is that this repo is more like a tutorial of Q-learning, Ant Colony Optimisation, SHHCSRP and Python than an appealing realisation for real-world application or academic research. It might disappoint those who are expecting too much from these aspects. But for those who are seeking references or learning/practicing examples, this might be a good one. :)
 
 P.S. This is also a summary of my last study stage.
 
@@ -23,13 +23,14 @@ Since RL algorithm requires a MDPs, the SVRP in this project was hierarchically 
    - take an action, that is, choose a vehicle.
    - observe the reward according to the solution given by the algorithm that solves the CCP model.
 
-Two objective of the model is to maximize the fulfilled demands. The QL agent was expected to learn to make a plan that satisfies the objective as much as possible. 
+The objective of the model is to maximize the fulfilled demands with least waiting cost. The QL agent was expected to learn to make a plan that satisfies the objective as much as possible. 
 
 But till now the algorithm does yet perform very well on the instance, which is probably due to the following problems:
 
 1. The state definition of the MDPs is not correct enough that it couldn't fully represent the environment.
 2. The reward function of the MDPs is not appropriate enough that it couldn't lead the agent towords sensible policy.
 3. The ACO algorithm that solves the CCP model is essentially based on random evolution, which commonly produces different sub-solution at each state of the MDPs, thus makes it more difficult for the QL agent to learn the right behavious.
+4. Unsupervised algorithms (like CNN, DQN, QL, etc.) need a huge amount of training data to learn sensible results. 
 
 However, this project was one part of my last research subject that is now finished, and my first motivation was the curiosity of how well the Reinforcement Learning techniques could preform on large scale combinatorial optimisation problem. The reason I put it on Github is to make it as a reference that might be useful for someone who wants to make further investigation on this direction or take it as a practice of implementing Q-learning on combinatorial optimisation problem. Here are some suggestions that might help this project to make further progress:
 
