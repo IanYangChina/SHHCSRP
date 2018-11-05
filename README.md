@@ -40,7 +40,14 @@ However, this project was one part of my last research subject that is now finis
 In spite of what's mentioned above, there are plenty of directions that this project could move towards. Besides, I hope you can learn something useful from this repo :)
 For detailed information please check out the Wiki pages: [Wiki](https://github.com/IanYangChina/Q-learning---Ant-colony-optimization/wiki)
 
-## Direct try-out
+## Files
+1. The 2 MS Visio files (.vsdx) are flow charts of the BWACO and QL algorithms.
+2. The 4 MS Excel files (.xlsx) are instances data.
+3. The 2 CSV files (.csv) are initial preference settings for relevant instances.
+4. [QL_BWACO.py](https://github.com/IanYangChina/SHHCSRP/blob/master/QL_BWACO.py) is the Python code for algorithms
+5. [main.py](https://github.com/IanYangChina/SHHCSRP/blob/master/main.py) is the main py file to run.
+
+## Run
 1. Setup expermental instance and nurse resource which are at the beginning in the "__main__".
 2. Run 'main.py'.
 3. After training, find new files in the root folder: things like **solution** with extensions like **.png** and **.xls**. They are results.
