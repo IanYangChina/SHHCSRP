@@ -1,18 +1,8 @@
 # An algorithm hibridized by Q-learning and Ant Colony Optimisation to solve the SHHCSRP
 
-The project is my first attempt to build a reinforcement learning agent for solving a complicated and large scale combinatorial optimisation problem. The target problem chosen for this project is a variant of the well-known Stochastic Vehicle Routing Problem, namely, the Stochastic Home Health Care Scheduling and Routing Problem. Basically, the task of such kind of problems is to assign a group of demands required by many customers to a group of vehicles with optimised cost, and this project aims to train an agent to make its own decisions generating a plan. 
+The project is my first attempt to build a tabular Q-learning agent to solve a complicated and large scale combinatorial optimisation problem. The problem, **Stochastic Home Health Care Scheduling and Routing Problem**, is a variant of the well-known Stochastic Vehicle Routing Problem (SVRP). Basically, the task of such kind of problems is to assign a group of demands required by many customers to a group of vehicles with optimised cost. This project aims to train an agent that makes its own decisions and generate a routing plan. 
 
-A statement here to make is that this repo is more like a tutorial of Q-learning, Ant Colony Optimisation, SHHCSRP and Python than an appealing realisation for real-world application or academic research. It might disappoint those who are expecting too much from these aspects. But for those who are seeking references or learning/practicing examples, this might be a good one. :)
-
-P.S. This is also a summary of my last study stage.
-
-## What you might possibly learn or get from this repo:
-
-1. What is Stochastic Home Health Care Scheduling and Routing Problem (or SVRP)
-2. What is Markov Decision Processes and how it works
-3. What is Chance Constained Programming and how it works
-4. What is Q-learning and how to realize it by Python
-5. What is Ant Colony Optimisation and how to realize it by Python
+**This repo is academic-oriented.**
 
 ## Brief Introduction
 
@@ -40,7 +30,7 @@ However, this project was one part of my last research subject that is now finis
 In spite of what's mentioned above, there are plenty of directions that this project could move towards. Besides, I hope you can learn something useful from this repo :)
 For detailed information please check out the Wiki pages: [Wiki](https://github.com/IanYangChina/Q-learning---Ant-colony-optimization/wiki)
 
-## Files
+## Files explanation
 1. The 2 MS Visio files (.vsdx) are flow charts of the BWACO and QL algorithms.
 2. The 4 MS Excel files (.xlsx) are instances data.
 3. The 2 CSV files (.csv) are initial preference settings for relevant instances.
